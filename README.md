@@ -1,16 +1,20 @@
 # Our Wedding
 
-Vercel deployment?
+##
 
-## 🧞 Commands
+Wedding Plan
 
-All commands are run from the root of the project, from a terminal:
+- 1pm Arrival
+- 2pm Ceremony
+- 2:30pm Hymns
+  - Wisemen Say
+  - To be a Pilgrim
+  - Jerusalem
+  - Jerushalym
+  - Sing it Louder
+  - Sol vind och Vatten
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- 3pm Cocktail Hour
+- 4pm Games
+- 6pm Barn Dancing
+- 7pm Old School Jam

@@ -17,45 +17,114 @@ import { parties } from "../content/parties.ts";
 	</head>
 	<body>
 		<Header />
-		<main class="max-w-[800px] mx-auto px-4">
-			<section class="space-y-4 lg:space-y-8">
-				{parties.map((party) => (
-					<div
-						class="bg-beige p-6 mx-auto flex flex-col border border-zinc-400 rounded-lg shadow-md"
-					>
-						<h2 class="text-2xl font-semibold mb-2">{party.title}</h2>
-						<h3 class="text-lg text-zinc-600 mb-4">
-							{party.date}
-						</h3>
-						<p class="text-zinc-800 mb-6 text-lg">
+		<main class="space-y-8 mx-auto px-4 pb-16 max-w-[800px]">
+			{
+				parties.map((party) => (
+					<div class="flex flex-col bg-beige shadow-md mx-auto p-6 border border-zinc-400 rounded-lg">
+						<h2 class="mb-2 font-semibold text-2xl">
+							{party.title}
+						</h2>
+						<h3 class="mb-4 text-zinc-600 text-lg">{party.date}</h3>
+						<p class="mb-6 text-zinc-800 text-lg">
 							{party.description}
 						</p>
 						<Image
 							src={party.image}
 							alt={party.imageAlt}
-							class="rounded-md shadow-sm"
+							class="shadow-sm rounded-md"
 						/>
 					</div>
-				))}
-			</section>
-			<h4
-				class="text-zinc-800 w-full text-center p-8 max-w-[600px] text-xl lg:text-2xl mx-auto font-semibold"
-			>
-				More information will be added later once we figure things out!
-			</h4>
-			<section class="bg-beige p-6 mx-auto flex flex-col border border-zinc-400 rounded-lg shadow-md mb-8">
-				
-				<h2 class="text-2xl font-semibold mb-4">Frequently Asked Questions</h2>
-				<div class="space-y-4">
-					{faqs.map((faq) => (
-						<div>
-							<h3 class="text-lg font-medium mb-2">{faq.question}</h3>
-							<p class="text-zinc-800 text-sm">{faq.answer}</p>
-						</div>
-					))}
+				))
+			}
+			<section class="space-y-4 lg:space-y-8">
+				<div
+					class="flex flex-col bg-beige shadow-md mx-auto p-6 border border-zinc-400 rounded-lg"
+				>
+					<h2 class="mb-2 font-semibold text-2xl">Directions</h2>
+
+					<p class="mb-6 text-zinc-800 text-lg">
+						If heading from Godalming to Hascombe on the Hascombe
+						road, you pass Munstead Heath road on left and Stilemans
+						is about 500m after this on the left after a 40mph sign
+						and after yew hedge.
+					</p>
+					<p class="mb-6 text-zinc-800 text-lg">
+						Please drive PAST the semi circular entrance another
+						300m to double gates on the left. Look out for balloons!
+						Entrance for cars and taxis is at the balloon entrance.
+					</p>
+					<p class="mb-6 text-zinc-800 text-lg">
+						Please note: It is much easier to enter these gates from
+						the other direction so best to drive past, turn around
+						and return!
+					</p>
+
+					<h3 class="my-4 text-zinc-600 text-xl">Address</h3>
+					<p class="mb-4 text-zinc-800 text-lg">
+						Park House, Stilemans, Hascombe, Godalming, GU8 4AB
+					</p>
+					<i class="mb-4 text-[1.2rem] text-zinc-600 italic">
+						Don't trust Google/Apple maps, use the link below
+						instead.
+					</i>
+					<a
+						target="_blank"
+						href="https://w3w.co/bucks.sushi.divide"
+						class="bg-purple-700 px-4 py-2 rounded-md w-fit text-white text-lg"
+						>Directions Link
+					</a>
+					<h3 class="my-4 text-zinc-600 text-xl">Parking</h3>
+					<p class="mb-6 text-zinc-800 text-lg">
+						Parking is around the back of the house.
+					</p>
 				</div>
+				<section class="space-y-4 lg:space-y-8">
+					<div
+						class="flex flex-col bg-beige shadow-md mx-auto p-6 border border-zinc-400 rounded-lg"
+					>
+						<h2 class="mb-2 font-semibold text-2xl">
+							What to Wear
+						</h2>
+						<h3 class="mb-4 text-zinc-600 text-xl">
+							Flickor (Girls)
+						</h3>
+						<p class="mb-6 text-zinc-800 text-lg">
+							Wear whatever you feel comfortable in! Most girls
+							are in long dresses and not so stilleto'y heels.
+						</p>
+						<h3 class="mb-4 text-zinc-600 text-xl">
+							Pojkar (Boys)
+						</h3>
+						<p class="mb-6 text-zinc-800 text-lg">
+							The groom is wearing a suit, so please do the same.
+							He's also wearing a tie - you don't have to do this.
+						</p>
+					</div>
+				</section>
+				<section class="space-y-4 lg:space-y-8">
+					<div
+						class="flex flex-col bg-beige shadow-md mx-auto p-6 border border-zinc-400 rounded-lg"
+					>
+						<h2 class="mb-2 font-semibold text-2xl">
+							What will we eat?
+						</h2>
+						<h3 class="mb-4 text-zinc-600 text-xl">
+							Vegans and Vegetarians
+						</h3>
+						<p class="mb-6 text-zinc-800 text-lg">
+							Sister Noni and wife Amelia will ensure there are
+							vegetables for all.
+						</p>
+						<h3 class="mb-4 text-zinc-600 text-xl">Allergies</h3>
+						<p class="mb-6 text-zinc-800 text-lg">
+							If you have any severe allergies please let us know.
+							This is a wedding, not a funeral.
+						</p>
+					</div>
+				</section>
+
+				<Footer />
 			</section>
 		</main>
-		<Footer />
 	</body>
 </html>

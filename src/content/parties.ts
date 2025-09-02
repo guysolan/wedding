@@ -21,7 +21,7 @@ export const parties: Party[] = [
 	{
 		title: "Wedding Day",
 		date: "06 September 2025",
-		description: "Come from 2pm for the ceremony at 3pm.",
+		description: "Come from 2pm for the ceremony at 2:30pm.",
 		image: Celebrating,
 		imageAlt: "Celebrating",
 	},

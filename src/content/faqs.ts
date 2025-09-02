@@ -6,11 +6,8 @@ export interface FAQ {
 export const faqs: FAQ[] = [
 	{
 		question: "What's the dress code?",
-		answer: "Semi-formal, wear something you like!",
-	},
-	{
-		question: "Are children welcome?",
-		answer: "Babies and adults only.",
+		answer:
+			"Suits and dresses. Tie's optional but the groom will be wearing one!",
 	},
 	{
 		question: "Will there be vegetarian/vegan options?",
@@ -24,6 +21,6 @@ export const faqs: FAQ[] = [
 	},
 	{
 		question: "Is there parking available?",
-		answer: "Yes, there is parking for all guests available in the garden.",
+		answer: "Yes, parking is around the back of the house.",
 	},
 ];

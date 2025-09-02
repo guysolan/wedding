@@ -14,14 +14,14 @@ export const parties: Party[] = [
 		title: "Family Party",
 		date: "05 September 2025",
 		description:
-			"We are having a party for family only the day before the wedding. Please come and join us for a BBQ and drinks.",
+			"We are having a party for family only the day before the wedding. Come at 3pm.",
 		image: FamilyHugs,
 		imageAlt: "Family Hugs",
 	},
 	{
 		title: "Wedding Day",
 		date: "06 September 2025",
-		description: "Come from 2pm for the ceremony at 2:30pm.",
+		description: "Come at 2pm for the ceremony at 2:30pm.",
 		image: Celebrating,
 		imageAlt: "Celebrating",
 	},
